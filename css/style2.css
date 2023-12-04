@@ -1,0 +1,638 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Harry P Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Harry P Regular'), url('HARRYP__.woff') format('woff');
+}
+
+a { 
+    color: #965c00;
+    text-decoration: none;
+}
+/* img{ vertical-align: middle; max-width: 100%;} */
+body {
+    /* font-family: 'NanumSquareLight';
+    font-family: 'NanumSquare';
+    font-family: 'NanumSquareBold';
+    font-family: 'NanumSquareExtraBold'; */
+    color: #965c00;
+    font-family: 'NanumSquare', sans-serif;
+    background-color: #fff5e1;
+    font-size: 22px;
+    cursor: url(../images/wh.png),auto;
+}
+
+
+/* .foot{display: flex; width: 100%;}
+.foot > li{padding-right: 10px;} */
+/* .foot > li a {
+    width: 120px; 
+    height: 30px;
+    display: inline-block;
+    /* line-height: 20px; */
+/*} */
+
+/* .foot li.active {
+    display: block;
+} */
+#wrap{overflow: hidden;}
+.page {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+#horizontal {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 300vw;
+}
+#horizontal > section { width: 100%;}
+
+.split > span { display: inline-block;} 
+
+/* index */
+#index {
+    position: fixed;
+    left: 20px;
+    bottom: 0px;
+    z-index: 1000;
+}
+#index>ul{
+    width: 100%; 
+    display: flex;
+    text-align: center;
+}
+
+#index>ul>li>a{
+    padding-bottom: 10px;
+    display: inline-block;
+}
+#index>ul>li>a:nth-child(2){
+    border-top: 3px solid;
+    width: 100%;
+    padding-top: 10px;
+    line-height: 20px;
+}
+#index>ul>li>a:nth-child(2):not(.b){
+    font-size: 17px;
+}
+#index>ul>li>a:nth-child(2).b{
+    font-family: 'NanumSquareExtraBold';
+    font-size: 19px;
+}
+
+/* section2 start*/
+#section2, #section9{background-color: #757066;}
+#section2> .am, #section9> .am{
+    margin-top: 3%;
+    background-image:url(../images/darklight.png),url(../images/am.png);
+    background-size: 5%,100%;
+    background-repeat: no-repeat;
+    background-position:336px 95px , 0 0;
+    width: 677px;
+    height: 774px;
+    text-align: center;
+}
+#section2>.am::before{
+    content: url(../images/glasses.png);
+    display: inline-block;
+    width: 295px; height: 112px;
+    margin: 219px auto;
+    margin-bottom: 36px;
+}
+
+.nameen{
+    font-family: 'Harry P Regular', sans-serif;
+    font-size: 72px;
+    color: #432900;
+}
+.name{
+    font-size: 38px;
+    font-family: 'NanumSquareBold', sans-serif;
+    color: #432900;
+    margin-top: 43px;
+}
+/* section2 end */
+
+/* section3 About start */
+#section3> .con{
+    display: flex;
+    width: 1600px;height: 789px;
+    margin-top: 3%;
+}
+.info{
+    width: 800px;height: 789px;
+    position: relative;
+    text-align: center;
+}
+
+/* content 속성으로 추가한 이미지는 크기를 정할 수 없다. 크기를 조절하고 싶다면 background 속성을 이용한다. */
+#section3>.con>.info::before{
+    content: url(../images/light.png);
+    display: inline-block;
+    /* width: 33px; height: 70px; */
+    padding-top: 144px;
+    margin-left: -600px;
+}
+
+#section3>.con>.info>.nameen::before{
+    content: url(../images/glasses.png);
+    display: inline-block;
+    width: 295px; height: 112px;
+    position: absolute;top: 250px;left: 250px;
+}
+#section3>.con>.info::after{
+    content: "";
+    display: inline-block;
+    width: 600px; height: 600px;
+    background-color: #965c00;
+    opacity: 20%;
+    border-radius: 50%;
+    position: absolute;top: 136px;left: 94px;
+    justify-content: center;
+    z-index: 1;
+}
+
+#section3>.con>.info> .nameen{
+    font-size: 47px;
+    letter-spacing: 10px;
+    margin-top: 180px;
+}
+#section3 >.con>.info>.name{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#section3 >.con>.info>.more> li{ padding: 10px;}
+h2{
+    font-family: 'Harry P Regular', sans-serif;
+    font-size: 100px;
+    letter-spacing: 30px;
+    /* text-align: left; */
+    /* margin-top: 10px; */
+}
+.about> h2{
+    text-align: center;
+    letter-spacing: 25px;
+    padding-left: 200px;
+}
+#section3>.con>.about>ul{
+    padding-top: 47px;
+    padding-left: 82px;
+}
+#section3>.con>.about>ul>li{
+    display: flex;
+    padding-bottom: 15px;
+}
+#section3>.con>.about>ul>li>b{
+    font-family: 'NanumSquareExtraBold';
+    width: 200px;
+}
+#section3>.con>.about>ul>li>ul>li{
+    padding-bottom: 20px;
+}
+#section3>.con>.about>ul>li>ul>li>span{
+    margin-right: 20px;
+}
+.b{font-family: 'NanumSquareExtraBold';}
+#section3>.con>.about>ul>li:nth-child(3)>ul>li{ word-spacing: 20px;}
+/* section3 About end */
+
+/* section3 contents start */
+.con{position: relative;}
+.contents h2{text-align: center;}
+.contents{position: absolute;top: 0;right: 75px;}
+
+#section3>.contents>h2{padding-left: 0;}
+
+/* .contents{display: none;} */
+
+/* section3 contents end */
+
+#section4, #section5, #section6{
+    background-image: url(../images/brick.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -90px;
+}
+
+/* section4 콘텐츠 pixcelart start */
+#section4> .con{ 
+    /* width: 83.5%; */
+    width: 1600px; 
+    display: flex;
+    margin: 0 auto ;
+}
+h2{
+    letter-spacing: 25px;
+    text-shadow: 4px 3px 0 #362201;
+    color: #764900;
+    /* font-size: 6.5vw; */
+    font-size: 140px;
+}
+.pixel{text-align: left; margin-top: 8.5%;
+}
+#section4>.con>div>div>.f1{
+    background-image: url(../images/f1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 151px;height: 148px;
+    margin-left: 50px;margin-top: 5%;
+}
+#section4>.con>div>div>.f1>.spider{
+    margin-top: 24px;margin-left: 24px;
+    margin-bottom: 12px;
+}
+
+#section4 .pp{
+    font-family: 'NanumSquareExtraBold', sans-serif;
+    font-size: 22px;
+    text-align: center;
+    color: #432900;
+    padding-top: 10px;
+}
+#section4 p{
+    font-size: 22px;
+    text-align: center;
+    color: #965c00;
+    margin-top: 15px;
+}
+/* 스파이더맨 끝 */
+
+#section4>.con>div>div>.f2{
+    background-image: url(../images/f2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 638px;height: 445px;
+    margin-left: 269px; margin-top: -148px;
+
+}
+#section4>.con>div>div>.f2>.up{
+    margin-top: 59px; margin-left: 63px;
+    margin-bottom: 58px;
+}
+
+/* 만화 업 끝 */
+
+/* 폴리곤 벅스배너 start */
+#section4>.con>div:nth-child(2){
+    display: inline-block;
+    margin-left: 45px;
+}
+.f3{
+    background-image: url(../images/f3.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 491px;height: 654px;
+    margin-top: 10%;
+    margin-left: 10%;
+    /* margin-left: 66px;
+    margin-top: 80px;
+    position: relative; */
+}
+.f3>.polygon{
+    margin-top: 114px;margin-left: 112px;
+}
+#section4>.con>div>.poly{
+    font-size: 6.5vw;
+    /* font-size: 130px;
+    text-align: right; */
+    
+}
+/* 폴리곤 벅스배너 끝 */
+
+/* 배경액자 f4,f5,f6 */
+#section4>.con>.f4 {
+    background-image: url(../images/f4.png);
+    background-repeat: no-repeat;
+    width: 185px;height: 190px;
+    position: absolute;top: 560px;left: 0;
+    margin-left: 30px;
+}
+#section4>.con>.f4>img{margin-top: 28px;margin-left: 30px;}
+#section4>.con>.f5 {
+    background-image: url(../images/f5.png);
+    background-repeat: no-repeat;
+    width: 143px;height: 148px;
+    position: absolute; top: 70px;left: 700px;
+}
+#section4>.con>.f5>img{margin-left: 12px;margin-top: 15px;}
+#section4>.f6{
+    background-image: url(../images/f6.png);
+    background-repeat: no-repeat;
+    width: 141px;height: 274px;
+    position: absolute;top: 400px;right: -30px;
+}
+#section4>.f6>img{margin-left: 20px;margin-top: 22px;}
+#section4>.con>.f4> img,
+#section4>.con>.f5> img,
+#section4>.f6> img{ background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));}
+
+
+/* section4 pixel, polygon end */
+/* #section4>.con>div:nth-child(1),
+#section4>.con>div:nth-child(2)
+{display: none;} */
+#section4>.con>.bannercon{display: none;}
+#section4>.con>.bannercon>.Banner{margin-top: 77px;}
+#section4>.con>.bannercon>div{display: flex;}
+.alaf{
+    margin-left: 71px;margin-top: 100px;
+}
+#section4>.con>.bannercon>div>.f3{
+    margin-left: 90px;
+    margin-top: -137px;
+}
+/* .bugs{position: absolute;top: 83px;left: 82px;} */
+.txt{position: absolute;top: 130px; right: -31px;}
+
+#section4>.con>.bannercon>div>.f3>img{
+    margin-top: 83px;margin-left: 82px;
+    margin-bottom: 87px;
+}
+/* section4 banner end */
+
+/* section5 로그인, 명함 start */
+#section5> .con{
+    display: flex;
+    width: 1600px;
+    margin-top: 5%;
+}
+#section5>.con>div> .LogIn{
+    text-align: left;
+    font-size: 134px;
+}
+#section5>.con>div>div>.txt2{
+    text-align: center;
+    padding-left: 150px;
+    padding-top: 140px;
+}
+#section5>.con>div>div>.txt2>.pp{
+    font-family: 'NanumSquareExtraBold', sans-serif;
+    font-size: 22px;
+    color: #432900;
+    padding-top: 10px;
+}
+#section5>.con>div>div>.txt2> p{
+    font-size: 22px;
+    color: #965c00;
+    margin-bottom: 10px;
+}
+
+.box{
+    border: 1px solid #432900;
+    text-align: center;
+}
+#section5>.con>div>div>.txt2> .box> a{
+    background-color: #fffefb;
+    display: block; 
+    font-size: 20px;
+    padding: 10px;
+}
+#section5>.con>div:nth-child(1)>div{display: flex;}
+#section5>.con>div>div>.f8{
+    margin-left: 50px;
+    margin-top: -75px;
+    background-image: url(../images/f8.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 365px;height: 620px;
+}
+#section5>.con>div>div>.f8>img{
+    padding-left: 48px;
+    padding-top: 61px;
+}
+
+/* 명함시작 */
+#section5>.con>.right{
+    margin-left: 160px;
+    height: 757px;
+}
+#section5>.con>.right>ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+#section5>.con>.right>ul>li{padding: 10px; }
+#section5>.con>.right>ul>li:nth-child(1){
+    font-family: 'NanumSquareExtraBold', sans-serif;
+    font-size: 22px;
+    color: #432900;
+}
+#section5>.con>.right>ul>li:nth-child(2){
+    font-size: 22px;
+    padding-left: 36px;padding-right: 50px;
+}
+#section5>.con>.right>ul>li:nth-child(3){
+    width: 160px;
+    background-color: #fff;
+    font-size: 20px;
+     /* height: 10px; */
+}
+#section5>.con>.right>.f9{
+    background-image: url(../images/f9.png);
+    background-repeat: no-repeat;
+    background-size:100%;
+    width: 569px;height: 460px;
+}
+#section5>.con>.right>.f9>img{margin-top: 64px;margin-left: 63px;}
+#section5>.con>.right>.NameCard{ 
+    font-size: 6.5vw;
+    /* font-size: 134px; */
+    margin-top: 20px;
+    margin-left: 14px;
+}
+
+#section5>.f6{
+    background-image: url(../images/f6.png);
+    background-repeat: no-repeat;
+    width: 141px;height: 274px;
+    position: absolute;top: 400px;left: -108px;
+}
+#section5>.f6>img{margin-left: 20px;margin-top: 22px;}
+
+/* section5 명함끝 */
+
+#section6 >.con{ 
+    width: 1600px;
+    display: flex;
+    margin: 0 auto;
+}
+#section6 h2{
+    letter-spacing: 20px;
+}
+.NeonSign {text-align: left; margin-top: 13%;}
+.f11{
+    background-image: url(../images/neonsign.gif);
+    background-repeat: no-repeat;
+    background-size: 92%;
+    background-position: 21px 42px;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+.txt3{margin-left: 536px; margin-top: -516px;}
+.pp{
+    font-family: 'NanumSquareExtraBold', sans-serif;
+    font-size: 22px;
+    text-align: center;
+    color: #432900;
+    padding-top: 10px;
+}
+.p{
+    font-size: 22px;
+    text-align: center;
+    color: #965c00;
+    margin-top: 15px;
+}
+#section6>.con>div:nth-child(2){
+    display: flex;
+}
+#section6>.con>div:nth-child(2)>.txt4{ 
+    margin-top: 495px;
+    margin-left: 43px;
+    width: 200px;
+}
+#section6>.con>div:nth-child(2)>ul>.box{
+    border: 1px solid #432900;
+    text-align: center;
+    margin-top: 10px;
+}
+#section6>.con>div:nth-child(2)>.txt4> .box a{
+    background-color: #fffefb;
+    display: block; 
+    font-size: 20px;
+    padding: 10px;
+}
+#section6>.con>div:nth-child(2)>.f10{
+    background-image: url(../images/f10.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 592px; height: 598px;
+    margin-top: 120px; margin-left: 68px;
+}
+#section6>.con>div:nth-child(2)>.f10>img{margin-top: 35px;margin-left: 48px;}
+#section6>.con>div:nth-child(2)>.CardNews {
+    font-size: 7vw;
+    position: absolute; right: 60px;
+    top: 700px;
+}
+
+/* section6 네온사인, 카트뉴스 끝 */
+/* web site ku 시작 */
+#section7>.con, #section8>.con{
+    width: 1600px;
+    margin-top: 90px;
+    display: flex;
+}
+#section7>.con>.left,#section8>.con>.left{padding-left: 40px;}
+#section7 h2, #section8 h2{
+    font-size: 134px;
+    font-family: 'NanumSquareExtraBold',sans-serif;
+    opacity: 50%;
+    text-shadow: 0 0 0;
+    letter-spacing: 0;
+    color: #432900;
+}
+#section7 h3, #section8 h3{
+    font-size: 39px;
+    font-family: 'NanumSquareBold', sans-serif;
+    color: #432900;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+#section7 >.con>.left::after,
+#section8 >.con>.left::after{
+    content: "";
+    display: inline-block;
+    width: 622px; height: 622px;
+    background-color: #965c00;
+    opacity: 20%;
+    border-radius: 50%;
+    position: absolute;top: 27px;left: 67px;
+    justify-content: center;
+    z-index: 1;
+}
+#section7>.con>.left>ul,
+#section8>.con>.left>ul{
+    margin-top: 100px;
+    margin-left: 100px;
+}
+#section7>.con>.left>ul>li,
+#section8>.con>.left>ul>li{
+    display: flex;
+    padding: 10px;
+}
+#section7>.con>.left>ul>li>b,
+ #section8>.con>.left>ul>li>b{
+    font-family: 'NanumSquareExtraBold', sans-serif;
+    width: 150px;
+}
+
+#section7> .con> .left,
+#section8> .con> .left{
+    width: 800px;height: 760px;
+}
+#section7> .con> .right,
+#section8> .con> .right{
+    width: 800px;height: 760px;
+    padding-top: 90px;
+    padding-left: 50px;
+}
+#section7> .con> .right a,
+#section8> .con> .right a {
+    font-size: 18px;
+    display: inline-block;
+    padding-top: 15px;
+    text-align: center;
+    width: 160px; height: 35px;
+    border: 1px solid #965c00;
+}
+#section7> .con> .right> a:nth-child(2),
+#section8> .con> .right> a:nth-child(2){
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+/* web site FNC 시작 */
+
+/* section8 end */
+
+/* section9 contact start */
+#section9 .nameen,
+#section9 .name{
+    color: #cdb913;
+    margin-top: 0;
+}
+#section9 .am div:nth-child(2),
+#section9 .am div:nth-child(4){
+    color: #ada18d;
+    font-size: 48px;
+    font-family: 'NanumSquareBold', sans-serif;
+    padding: 20px;
+}
+#section9 .am div:nth-child(4){
+    font-size: 60px;
+}
+#section9 .am{
+    margin-top: 3%;
+    background-image: url(../images/ylight.png),url(../images/am.png);
+    background-size: 5%,100%;
+    background-repeat: no-repeat;
+    background-position: 336px 95px, 0 0 ;
+    width: 677px;
+    height: 774px;
+    text-align: center;
+}
+#section9>.am::before{
+    content: url(../images/glasses.png);
+    display: inline-block;
+    width: 295px; height: 112px;
+    margin: 219px auto;
+    margin-bottom: 36px;
+}

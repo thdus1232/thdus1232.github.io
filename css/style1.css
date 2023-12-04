@@ -1,0 +1,72 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Harry P Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Harry P Regular'), url('HARRYP__.woff') format('woff');
+}
+a { 
+    text-decoration: none;
+}
+body {
+    color: #965c00;
+    font-family: 'NanumSquare', sans-serif;
+    background-color: #fff5e1;
+    font-size: 22px;
+    cursor: url(../images/wh.png),auto;
+}
+.page {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    overflow: hidden;
+}
+#section1{
+    background-image: url(../images/cast.png),url(../images/bgb.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    
+    /* animation: move 2.5s linear; */
+
+}
+#section1>a>img{
+    width: 542px;height: 512px;
+    margin-top: 150px;
+    z-index: 500;
+
+    animation: intro 2.5s linear;
+}
+
+/* animation: [name] [duration] [timing-function] [delay] [iteration-count] [direction] */
+/* div {  애니메이션이름   시간   반복횟수 } or div {  애니메이션이름   시간   속도 } */
+
+/* animation-name: myframe;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        
+        animation-iteration-count: 3;
+        animation-direction: alternate; */
+
+@keyframes intro {
+    from{scale: 10;}
+    to{scale: 1;}    
+}
+@keyframes move {
+    from{left: 0;;}
+    to{left: 10px;;}    
+}
+
+#section1> .wpp{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 72px;
+    font-family: 'NanumSquareBold', sans-serif;
+    color: #fff;
+}
+#section1> .wpp> img{vertical-align: middle;}
+/* section1 end */
