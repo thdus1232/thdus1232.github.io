@@ -19,6 +19,7 @@
         </section>
         <section id="section3" class="page">
             <div id="index">
+                <!-- <div class="index-wrap"> -->
                 <ul class="foot">
                     <li class="step">
                         <a href="index.html"><img src="images/steps.png" alt="steps"></a>
@@ -81,6 +82,7 @@
                         <a href="#section9" class="b">Contact</a>
                     </li>
                 </ul>
+            <!-- </div> -->
             </div>
             <div class="con">
                 <div class="info">
@@ -175,27 +177,30 @@
                         <h2 class="poly split">PolygonArt</h2>
                     </div>
                     <!-- 폴리곤아트 끝 -->
-                    <div class="bannercon">
-                        <h2 class="Banner split">Banner</h2>
-                        <div>
-                            <div class="f1">
-                                <img src="images/f1.png" alt="frame1">
-                            </div>
-                            <div class="alaf">  
-                                <img class="ala" src="images/aladin.png" alt="aladin">
-                                <p class="pp">알라딘 팝업 배너</p><p>Illustrator</p>
-                            </div>
-                            <div class="f3">
-                                <img class="bugs" src="images/bugs.png" alt="bugs">
-                                <p class="pp">벅스 팝업 배너</p><p>Illustrator</p>
-                            </div>
+                </div>
+                <!-- .con 끝 -->
+                <div class="bannercon">
+                    <h2 class="Banner split">Banner</h2>
+                    <div>
+                        <div class="f1">
+                            <img src="images/f1.png" alt="frame1">
+                        </div>
+                        <div class="alaf">  
+                            <img class="ala" src="images/aladin.png" alt="aladin">
+                            <p class="pp">알라딘 팝업 배너</p><p>Illustrator</p>
+                        </div>
+                        <div class="f3">
+                            <img class="bugs" src="images/bugs.png" alt="bugs">
+                            <p class="pp">벅스 팝업 배너</p><p>Illustrator</p>
                         </div>
                     </div>
-                    <!-- 배너끝 -->
-                    <!-- 움직이는 액자 f4, f5, f6 -->
-                    <div class="f4"><img src="images/mm1.gif" alt="frame4"></div>
-                    <div class="f5"><img src="images/mm2.gif" alt="frame5"></div>
                 </div>
+                <!-- 배너콘 끝 -->
+
+                <!-- 움직이는 액자 f4, f5, f6 -->
+                <div class="f4"><img src="images/mm1.gif" alt="frame4"></div>
+                <div class="f5"><img src="images/mm2.gif" alt="frame5"></div>
+                
                 <div class="f6"><img src="images/mm3.gif" alt="frame6"></div>
             </section>
 
@@ -206,7 +211,7 @@
                         <div>
                             <div class="txt2">
                                 <p class="pp">콰트 로그인 화면 제작</p><p>Adobe Xd</p>
-                                <div class="box"><a href="http://xd.adobe.com/view/5dc1a193-dd21-48c4-9432-929c19ad7971-0892/" >링크 바로가기</a></div>
+                                <!-- <div class="box"><a href="http://xd.adobe.com/view/5dc1a193-dd21-48c4-9432-929c19ad7971-0892/" >링크 바로가기</a></div> -->
                             </div>
                             <div class="f8"><img src="images/quat.gif" alt="quat"></div>
                         </div>
@@ -217,7 +222,7 @@
                         <ul>
                             <li>명함제작</li>
                             <li>Adobe Xd</li>
-                            <li class="box"><a href="https://xd.adobe.com/view/b2899686-f273-40f7-9a2a-a8dc2041f744-e7da/screen/dd20cb69-b3d5-456d-8a8c-a8236ece4bc7">링크 바로가기</a></li>
+                            <!-- <li class="box"><a href="https://xd.adobe.com/view/b2899686-f273-40f7-9a2a-a8dc2041f744-e7da/screen/dd20cb69-b3d5-456d-8a8c-a8236ece4bc7">링크 바로가기</a></li> -->
                         </ul>
                         <div class="f9"><img src="images/namecard.gif" alt="namecard"></div>
                         <h2 class="NameCard split">NameCard</h2>
@@ -297,78 +302,8 @@
             </div>
         </section>
     </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="js/script.js"></script>
-    
-    <!-- <script>
-        gsap.registerPlugin(ScrollTrigger);
-        // const ani1 = gsap.timeline();
-        // ani1.to("#section3 .about", {xPercent: 300, autoAlpha:0},)
-        //     .;
-
-        // ScrollTrigger.create({
-        //     animation: ani1,
-        //     trigger: "#section3",
-        //     start: "top top",
-        //     end: "+=3000",
-        //     scrub: true,
-        //     pin: true,
-        //     markers: true,
-        //     anticipatePin: 1
-        // });
-
-
-        // // 텍스트 분리
-        document.querySelectorAll(".split").forEach(text => {
-            let splitWrap = text.innerText.split('').join("</span><span aria-hidden='true'>");
-            text.innerHTML = "<span aria-hidden='true'>"+ splitWrap +"</span>";
-            text.setAttribute("aria-label", text.innerText);
-        });
-
-        gsap.utils.toArray(".split").forEach((text) => {
-            gsap.from(text.querySelectorAll("span"), {
-                yPercent: -100,
-                outoAlpha: 0,
-                duration: 1,
-                ease: "circ.out",
-                //stagger: 0.04,
-                stagger: {
-                    amount: 1,
-                    from: "random"
-                },
-
-                scrollTrigger: {
-                    trigger: text,
-                    start: "top bottom",
-                    end: "+=400",
-                    toggleActions: "restart none none none",
-                    markers: true,
-                }
-            });
-        });
-
-
-        // 가로
-        const horizontal = document.querySelector("#horizontal");
-        const sections = gsap.utils.toArray("#horizontal > section");
-        
-        let scrollTween = gsap.to(sections, {
-        xPercent: -100 * (sections.length - 1),
-        ease: "none",
-        scrollTrigger: {
-            trigger: horizontal,
-            start: "top top",
-            end: () =>  "+=" + (horizontal.offsetWidth - innerWidth),
-            pin: true,
-            anticipatePin: 1,
-            scrub: 1,
-            invalidateOnRefresh: true,
-        }
-        });
-        // // 가로 끝
-    </script> -->
-
-    
 </body>
 </html>

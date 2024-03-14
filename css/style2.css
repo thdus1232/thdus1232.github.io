@@ -49,7 +49,7 @@ body {
 #horizontal {
     display: flex;
     flex-wrap: nowrap;
-    width: 300vw;
+    width: 300%;
 }
 #horizontal > section { width: 100%;}
 
@@ -63,6 +63,11 @@ body {
     z-index: 1000;
 }
 #index>ul{
+    /* position: fixed;
+    left: 20px;
+    bottom: 0px;
+    z-index: 1000; */
+
     width: 100%; 
     display: flex;
     text-align: center;
@@ -120,6 +125,7 @@ body {
 /* section2 end */
 
 /* section3 About start */
+#section3{background-color: #fff5e1;}
 #section3> .con{
     display: flex;
     width: 1600px;height: 789px;
@@ -138,6 +144,7 @@ body {
     /* width: 33px; height: 70px; */
     padding-top: 144px;
     margin-left: -600px;
+    
 }
 
 #section3>.con>.info>.nameen::before{
@@ -306,21 +313,21 @@ h2{
 /* 폴리곤 벅스배너 끝 */
 
 /* 배경액자 f4,f5,f6 */
-#section4>.con>.f4 {
+#section4>.f4 {
     background-image: url(../images/f4.png);
     background-repeat: no-repeat;
     width: 185px;height: 190px;
-    position: absolute;top: 560px;left: 0;
+    position: absolute;top: 560px;left: 150px;
     margin-left: 30px;
 }
-#section4>.con>.f4>img{margin-top: 28px;margin-left: 30px;}
-#section4>.con>.f5 {
+#section4>.f4>img{margin-top: 28px;margin-left: 30px;}
+#section4>.f5 {
     background-image: url(../images/f5.png);
     background-repeat: no-repeat;
     width: 143px;height: 148px;
     position: absolute; top: 70px;left: 700px;
 }
-#section4>.con>.f5>img{margin-left: 12px;margin-top: 15px;}
+#section4>.f5>img{margin-left: 12px;margin-top: 15px;}
 #section4>.f6{
     background-image: url(../images/f6.png);
     background-repeat: no-repeat;
@@ -328,29 +335,35 @@ h2{
     position: absolute;top: 400px;right: -30px;
 }
 #section4>.f6>img{margin-left: 20px;margin-top: 22px;}
-#section4>.con>.f4> img,
-#section4>.con>.f5> img,
-#section4>.f6> img{ background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));}
+#section4>.f4> img,#section4>.f5> img,
+#section4>.f6> img{background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));}
 
 
 /* section4 pixel, polygon end */
 /* #section4>.con>div:nth-child(1),
 #section4>.con>div:nth-child(2)
 {display: none;} */
-#section4>.con>.bannercon{display: none;}
-#section4>.con>.bannercon>.Banner{margin-top: 77px;}
-#section4>.con>.bannercon>div{display: flex;}
+/* #section4>.con{position: relative;} */
+#section4>.bannercon{opacity: 0;}
+#section4>.bannercon{
+    position: absolute;top: 0;left: 202px;
+}
+#section4>.bannercon>.Banner{margin-top: 77px;}
+#section4>.bannercon>div{display: flex;}
+#section4>.bannercon>div>.f1{
+    margin-top: 3%;
+}
 .alaf{
     margin-left: 71px;margin-top: 100px;
 }
-#section4>.con>.bannercon>div>.f3{
-    margin-left: 90px;
-    margin-top: -137px;
+#section4>.bannercon>div>.f3{
+    margin-left: 87px;
+    margin-top: -154px;
 }
 /* .bugs{position: absolute;top: 83px;left: 82px;} */
 .txt{position: absolute;top: 130px; right: -31px;}
 
-#section4>.con>.bannercon>div>.f3>img{
+#section4>.bannercon>div>.f3>img{
     margin-top: 83px;margin-left: 82px;
     margin-bottom: 87px;
 }
@@ -409,7 +422,7 @@ h2{
 
 /* 명함시작 */
 #section5>.con>.right{
-    margin-left: 160px;
+    margin-left: 240px;
     height: 757px;
 }
 #section5>.con>.right>ul{
