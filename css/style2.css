@@ -49,7 +49,7 @@ body {
 #horizontal {
     display: flex;
     flex-wrap: nowrap;
-    width: 300%;
+    width: 400%;
 }
 #horizontal > section { width: 100%;}
 
@@ -90,10 +90,12 @@ body {
     font-family: 'NanumSquareExtraBold';
     font-size: 19px;
 }
+#index>ul>li>a>img{opacity: 0;}
+#index>ul>li>a>img.active{opacity: 100;}
 
-/* section2 start*/
-#section2, #section9{background-color: #757066;}
-#section2> .am, #section9> .am{
+/* section1 start*/
+#section1, #section9{background-color: #757066;}
+#section1> .am, #section9> .am{
     margin-top: 3%;
     background-image:url(../images/darklight.png),url(../images/am.png);
     background-size: 5%,100%;
@@ -103,7 +105,7 @@ body {
     height: 774px;
     text-align: center;
 }
-#section2>.am::before{
+#section1>.am::before{
     content: url(../images/glasses.png);
     display: inline-block;
     width: 295px; height: 112px;
@@ -122,11 +124,11 @@ body {
     color: #432900;
     margin-top: 43px;
 }
-/* section2 end */
+/* section1 end */
 
-/* section3 About start */
-#section3{background-color: #fff5e1;}
-#section3> .con{
+/* section2 About start */
+#section2{background-color: #fff5e1;}
+#section2> .con{
     display: flex;
     width: 1600px;height: 789px;
     margin-top: 3%;
@@ -138,7 +140,7 @@ body {
 }
 
 /* content 속성으로 추가한 이미지는 크기를 정할 수 없다. 크기를 조절하고 싶다면 background 속성을 이용한다. */
-#section3>.con>.info::before{
+#section2>.con>.info::before{
     content: url(../images/light.png);
     display: inline-block;
     /* width: 33px; height: 70px; */
@@ -147,13 +149,13 @@ body {
     
 }
 
-#section3>.con>.info>.nameen::before{
+#section2>.con>.info>.nameen::before{
     content: url(../images/glasses.png);
     display: inline-block;
     width: 295px; height: 112px;
     position: absolute;top: 250px;left: 250px;
 }
-#section3>.con>.info::after{
+#section2>.con>.info::after{
     content: "";
     display: inline-block;
     width: 600px; height: 600px;
@@ -165,16 +167,16 @@ body {
     z-index: 1;
 }
 
-#section3>.con>.info> .nameen{
+#section2>.con>.info> .nameen{
     font-size: 47px;
     letter-spacing: 10px;
     margin-top: 180px;
 }
-#section3 >.con>.info>.name{
+#section2 >.con>.info>.name{
     margin-top: 30px;
     margin-bottom: 20px;
 }
-#section3 >.con>.info>.more> li{ padding: 10px;}
+#section2 >.con>.info>.more> li{ padding: 10px;}
 h2{
     font-family: 'Harry P Regular', sans-serif;
     font-size: 100px;
@@ -187,48 +189,48 @@ h2{
     letter-spacing: 25px;
     padding-left: 200px;
 }
-#section3>.con>.about>ul{
+#section2>.con>.about>ul{
     padding-top: 47px;
     padding-left: 82px;
 }
-#section3>.con>.about>ul>li{
+#section2>.con>.about>ul>li{
     display: flex;
     padding-bottom: 15px;
 }
-#section3>.con>.about>ul>li>b{
+#section2>.con>.about>ul>li>b{
     font-family: 'NanumSquareExtraBold';
     width: 200px;
 }
-#section3>.con>.about>ul>li>ul>li{
+#section2>.con>.about>ul>li>ul>li{
     padding-bottom: 20px;
 }
-#section3>.con>.about>ul>li>ul>li>span{
+#section2>.con>.about>ul>li>ul>li>span{
     margin-right: 20px;
 }
 .b{font-family: 'NanumSquareExtraBold';}
-#section3>.con>.about>ul>li:nth-child(3)>ul>li{ word-spacing: 20px;}
+#section2>.con>.about>ul>li:nth-child(3)>ul>li{ word-spacing: 20px;}
 /* section3 About end */
 
-/* section3 contents start */
+/* section2 contents start */
 .con{position: relative;}
 .contents h2{text-align: center;}
 .contents{position: absolute;top: 0;right: 75px;}
 
-#section3>.contents>h2{padding-left: 0;}
+#section2>.contents>h2{padding-left: 0;}
 
 /* .contents{display: none;} */
 
-/* section3 contents end */
+/* section2 contents end */
 
-#section4, #section5, #section6{
+#section3, #section4, #section5, #section6{
     background-image: url(../images/brick.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: -90px;
 }
 
-/* section4 콘텐츠 pixcelart start */
-#section4> .con{ 
+/* section3 콘텐츠 pixcelart start */
+#section3> .con{ 
     /* width: 83.5%; */
     width: 1600px; 
     display: flex;
@@ -243,26 +245,26 @@ h2{
 }
 .pixel{text-align: left; margin-top: 8.5%;
 }
-#section4>.con>div>div>.f1{
+#section3>.con>div>div>.f1{
     background-image: url(../images/f1.png);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 151px;height: 148px;
     margin-left: 50px;margin-top: 5%;
 }
-#section4>.con>div>div>.f1>.spider{
+#section3>.con>div>div>.f1>.spider{
     margin-top: 24px;margin-left: 24px;
     margin-bottom: 12px;
 }
 
-#section4 .pp{
+#section3 .pp, #section4 .pp{
     font-family: 'NanumSquareExtraBold', sans-serif;
     font-size: 22px;
     text-align: center;
     color: #432900;
     padding-top: 10px;
 }
-#section4 p{
+#section3 p, #section4 p{
     font-size: 22px;
     text-align: center;
     color: #965c00;
@@ -270,7 +272,7 @@ h2{
 }
 /* 스파이더맨 끝 */
 
-#section4>.con>div>div>.f2{
+#section3>.con>div>div>.f2{
     background-image: url(../images/f2.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -278,7 +280,7 @@ h2{
     margin-left: 269px; margin-top: -148px;
 
 }
-#section4>.con>div>div>.f2>.up{
+#section3>.con>div>div>.f2>.up{
     margin-top: 59px; margin-left: 63px;
     margin-bottom: 58px;
 }
@@ -286,7 +288,7 @@ h2{
 /* 만화 업 끝 */
 
 /* 폴리곤 벅스배너 start */
-#section4>.con>div:nth-child(2){
+#section3>.con>div:nth-child(2){
     display: inline-block;
     margin-left: 45px;
 }
@@ -304,7 +306,7 @@ h2{
 .f3>.polygon{
     margin-top: 114px;margin-left: 112px;
 }
-#section4>.con>div>.poly{
+#section3>.con>div>.poly{
     font-size: 6.5vw;
     /* font-size: 130px;
     text-align: right; */
@@ -313,52 +315,51 @@ h2{
 /* 폴리곤 벅스배너 끝 */
 
 /* 배경액자 f4,f5,f6 */
-#section4>.f4 {
+#section3>.f4 {
     background-image: url(../images/f4.png);
     background-repeat: no-repeat;
     width: 185px;height: 190px;
     position: absolute;top: 560px;left: 150px;
     margin-left: 30px;
 }
-#section4>.f4>img{margin-top: 28px;margin-left: 30px;}
-#section4>.f5 {
+#section3>.f4>img{margin-top: 28px;margin-left: 30px;}
+#section3>.f5 {
     background-image: url(../images/f5.png);
     background-repeat: no-repeat;
     width: 143px;height: 148px;
-    position: absolute; top: 70px;left: 700px;
+    position: absolute; top: 70px;left: 815px;
 }
-#section4>.f5>img{margin-left: 12px;margin-top: 15px;}
-#section4>.f6{
+#section3>.f5>img{margin-left: 12px;margin-top: 15px;}
+#section3>.f6{
     background-image: url(../images/f6.png);
     background-repeat: no-repeat;
     width: 141px;height: 274px;
     position: absolute;top: 400px;right: -30px;
 }
-#section4>.f6>img{margin-left: 20px;margin-top: 22px;}
-#section4>.f4> img,#section4>.f5> img,
-#section4>.f6> img{background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));}
+#section3>.f6>img{margin-left: 20px;margin-top: 22px;}
+#section3>.f4> img,#section4>.f5> img,
+#section3>.f6> img{background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));}
 
 
-/* section4 pixel, polygon end */
-/* #section4>.con>div:nth-child(1),
-#section4>.con>div:nth-child(2)
+/* section3 pixel, polygon end */
+/* #section3>.con>div:nth-child(1),
+#section3>.con>div:nth-child(2)
 {display: none;} */
-/* #section4>.con{position: relative;} */
-#section4>.bannercon{opacity: 0;}
+/* #section3>.con{position: relative;} */
+
+/* 밑에지워보기 */
+/* #section4>.bannercon{opacity: 0;} */
 #section4>.bannercon{
     position: absolute;top: 0;left: 202px;
 }
 #section4>.bannercon>.Banner{margin-top: 77px;}
 #section4>.bannercon>div{display: flex;}
-#section4>.bannercon>div>.f1{
-    margin-top: 3%;
-}
 .alaf{
     margin-left: 71px;margin-top: 100px;
 }
 #section4>.bannercon>div>.f3{
-    margin-left: 87px;
-    margin-top: -154px;
+    margin-left: 198px;
+    margin-top: -135px;
 }
 /* .bugs{position: absolute;top: 83px;left: 82px;} */
 .txt{position: absolute;top: 130px; right: -31px;}
@@ -367,6 +368,14 @@ h2{
     margin-top: 83px;margin-left: 82px;
     margin-bottom: 87px;
 }
+#section4>.f6{
+    background-image: url(../images/f6.png);
+    background-repeat: no-repeat;
+    width: 141px;height: 274px;
+    position: absolute;top: 400px;left: -108px;
+}
+#section4>.f6>img{margin-left: 20px;margin-top: 22px;}
+
 /* section4 banner end */
 
 /* section5 로그인, 명함 start */
@@ -462,13 +471,6 @@ h2{
     margin-left: 14px;
 }
 
-#section5>.f6{
-    background-image: url(../images/f6.png);
-    background-repeat: no-repeat;
-    width: 141px;height: 274px;
-    position: absolute;top: 400px;left: -108px;
-}
-#section5>.f6>img{margin-left: 20px;margin-top: 22px;}
 
 /* section5 명함끝 */
 
