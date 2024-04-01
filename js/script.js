@@ -91,7 +91,7 @@ links.forEach(link => {
         containerAnimation: scrollTween,
         start: "top center",
         end: "bottom right",
-        markers: true,
+        markers: false,
         onToggle: () => setActive(link)
     });
 
