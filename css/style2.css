@@ -146,7 +146,6 @@ body {
     /* width: 33px; height: 70px; */
     padding-top: 144px;
     margin-left: -600px;
-    
 }
 
 #section2>.con>.info>.nameen::before{
@@ -217,7 +216,6 @@ h2{
 .contents{position: absolute;top: 0;right: 75px;}
 
 #section2>.contents>h2{padding-left: 0;}
-
 /* .contents{display: none;} */
 
 /* section2 contents end */
@@ -278,13 +276,11 @@ h2{
     background-size: 100%;
     width: 638px;height: 445px;
     margin-left: 269px; margin-top: -148px;
-
 }
 #section3>.con>div>div>.f2>.up{
     margin-top: 59px; margin-left: 63px;
     margin-bottom: 58px;
 }
-
 /* 만화 업 끝 */
 
 /* 폴리곤 벅스배너 start */
@@ -299,9 +295,6 @@ h2{
     width: 491px;height: 654px;
     margin-top: 10%;
     margin-left: 10%;
-    /* margin-left: 66px;
-    margin-top: 80px;
-    position: relative; */
 }
 .f3>.polygon{
     margin-top: 114px;margin-left: 112px;
@@ -310,7 +303,6 @@ h2{
     font-size: 6.5vw;
     /* font-size: 130px;
     text-align: right; */
-    
 }
 /* 폴리곤 벅스배너 끝 */
 
@@ -339,29 +331,16 @@ h2{
 #section3>.f6>img{margin-left: 20px;margin-top: 22px;}
 #section3>.f4> img,#section4>.f5> img,
 #section3>.f6> img{background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));}
-
-
 /* section3 pixel, polygon end */
-/* #section3>.con>div:nth-child(1),
-#section3>.con>div:nth-child(2)
-{display: none;} */
-/* #section3>.con{position: relative;} */
 
-/* 밑에지워보기 */
-/* #section4>.bannercon{opacity: 0;} */
-#section4>.bannercon{
-    position: absolute;top: 0;left: 202px;
-}
+#section4>.bannercon{position: absolute;top: 0;left: 202px;}
 #section4>.bannercon>.Banner{margin-top: 77px;}
 #section4>.bannercon>div{display: flex;}
-.alaf{
-    margin-left: 71px;margin-top: 100px;
-}
+.alaf{margin-left: 71px;margin-top: 100px;}
 #section4>.bannercon>div>.f3{
     margin-left: 198px;
     margin-top: -135px;
 }
-/* .bugs{position: absolute;top: 83px;left: 82px;} */
 .txt{position: absolute;top: 130px; right: -31px;}
 
 #section4>.bannercon>div>.f3>img{
@@ -375,7 +354,6 @@ h2{
     position: absolute;top: 400px;left: -108px;
 }
 #section4>.f6>img{margin-left: 20px;margin-top: 22px;}
-
 /* section4 banner end */
 
 /* section5 로그인, 명함 start */
@@ -455,7 +433,6 @@ h2{
     width: 160px;
     background-color: #fff;
     font-size: 20px;
-     /* height: 10px; */
 }
 #section5>.con>.right>.f9{
     background-image: url(../images/f9.png);
@@ -466,12 +443,9 @@ h2{
 #section5>.con>.right>.f9>img{margin-top: 64px;margin-left: 63px;}
 #section5>.con>.right>.NameCard{ 
     font-size: 6.5vw;
-    /* font-size: 134px; */
     margin-top: 20px;
     margin-left: 14px;
 }
-
-
 /* section5 명함끝 */
 
 #section6 >.con{ 
@@ -505,9 +479,7 @@ h2{
     color: #965c00;
     margin-top: 15px;
 }
-#section6>.con>div:nth-child(2){
-    display: flex;
-}
+#section6>.con>div:nth-child(2){display: flex;}
 #section6>.con>div:nth-child(2)>.txt4{ 
     margin-top: 495px;
     margin-left: 43px;
@@ -537,8 +509,8 @@ h2{
     position: absolute; right: 60px;
     top: 700px;
 }
-
 /* section6 네온사인, 카트뉴스 끝 */
+
 /* web site ku 시작 */
 #section7>.con, #section8>.con{
     width: 1600px;
@@ -614,7 +586,6 @@ h2{
     margin-left: 100px;
     margin-right: 100px;
 }
-/* web site FNC 시작 */
 
 /* section8 end */
 
