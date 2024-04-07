@@ -12,10 +12,6 @@ a {
 }
 /* img{ vertical-align: middle; max-width: 100%;} */
 body {
-    /* font-family: 'NanumSquareLight';
-    font-family: 'NanumSquare';
-    font-family: 'NanumSquareBold';
-    font-family: 'NanumSquareExtraBold'; */
     color: #965c00;
     font-family: 'NanumSquare', sans-serif;
     background-color: #fff5e1;
@@ -91,7 +87,7 @@ body {
     font-size: 19px;
 }
 #index>ul>li>a>img{opacity: 0;}
-#index>ul>li>a>img.active{opacity: 100;}
+/* #index>ul>li>a>img.active{opacity: 100;} */
 
 /* section1 start*/
 #section1, #section9{background-color: #757066;}
