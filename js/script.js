@@ -115,7 +115,6 @@ gsap.to(".step:nth-child(2)>a>img", {
         start: "top top",
         end:"+=1000",
         toggleActions: "play reset play reset",
-        markers: false,
         id: "2"
     }
 });
@@ -128,7 +127,6 @@ gsap.to(".step:nth-child(3)>a>img", {
         start: "+=1000",
         end:"+=1000",
         toggleActions: "play reset play reset",
-        markers: false,
         id: "3"
     }
 });
@@ -141,7 +139,6 @@ gsap.to(".step:nth-child(4)>a>img", {
         start: "+=2000",
         end:"+=1000",
         toggleActions: "play reset play reset",
-        markers: false,
         id: "4"
     }
 });
@@ -157,7 +154,6 @@ gsap.to(".step:nth-child(5)>a>img", {
         start: "top top",
         end: "center left",
         toggleActions: "play reset play reset",
-        markers: false,
         id: "s3"
     }
 });
@@ -172,7 +168,6 @@ gsap.to(".step:nth-child(6)>a>img", {
         containerAnimation: scrollTween,
         start: "left center",
         toggleActions: "play reset play reset",
-        markers: false,
         id: "poly"
     }
 });
@@ -187,7 +182,6 @@ gsap.to(".step:nth-child(7)>a>img", {
         start: "left center",
         end: "right center",
         toggleActions: "play reset play reset",
-        markers: false,
         id: "s4"
     }
 });
@@ -202,7 +196,6 @@ gsap.to(".step:nth-child(8)>a>img", {
         start: "left center",
         end: "center center",
         toggleActions: "play reset play reset",
-        markers: false,
         id: "s5"
     }
 });
@@ -218,7 +211,6 @@ gsap.to(".step:nth-child(9)>a>img", {
         start: "center center",
         end: "right center",
         toggleActions: "play reset play reset",
-        markers: false,
         id: "name"
     }
 });
@@ -234,7 +226,6 @@ gsap.to(".step:nth-child(10)>a>img", {
         start: "left center",
         end: "center center",
         toggleActions: "play reset play reset",
-        markers: false,
         id: "s6"
     }
 });
@@ -249,7 +240,6 @@ gsap.to(".step:nth-child(11)>a>img", {
         start: "left 20%",
         end: "center center",
         toggleActions: "play reset play reset",
-        markers: false,
         id: "card"
     }
 });
@@ -263,7 +253,6 @@ gsap.to(".step:nth-child(12)>a>img", {
         start: "-=900",
         end:"+=900",
         toggleActions: "play reset play reset",
-        markers: false,
         id: "6"
     }
 });
@@ -275,8 +264,6 @@ gsap.to(".step:nth-child(13)>a>img", {
         trigger: "#section7",
         start:"top top",
         end:"bottom top",
-        // start: "-=100",
-        // end:"+=700",
         toggleActions: "play reset play reset",
         markers: false,
         id: "ku"
@@ -336,7 +323,6 @@ gsap.to(".step:nth-child(15)>a>img", {
         start: "top center",
         end:"+=2500",
         toggleActions: "play reset play reset",
-        markers: false,
         id: "9"
     }
 });

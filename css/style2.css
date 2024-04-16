@@ -10,7 +10,6 @@ a {
     color: #965c00;
     text-decoration: none;
 }
-/* img{ vertical-align: middle; max-width: 100%;} */
 body {
     color: #965c00;
     font-family: 'NanumSquare', sans-serif;
@@ -18,20 +17,6 @@ body {
     font-size: 22px;
     cursor: url(../images/wh.png),auto;
 }
-
-
-/* .foot{display: flex; width: 100%;}
-.foot > li{padding-right: 10px;} */
-/* .foot > li a {
-    width: 120px; 
-    height: 30px;
-    display: inline-block;
-    /* line-height: 20px; */
-/*} */
-
-/* .foot li.active {
-    display: block;
-} */
 #wrap{overflow: hidden;}
 .page {
     width: 100%;
@@ -59,11 +44,6 @@ body {
     z-index: 1000;
 }
 #index>ul{
-    /* position: fixed;
-    left: 20px;
-    bottom: 0px;
-    z-index: 1000; */
-
     width: 100%; 
     display: flex;
     text-align: center;
@@ -79,15 +59,12 @@ body {
     padding-top: 10px;
     line-height: 20px;
 }
-#index>ul>li>a:nth-child(2):not(.b){
-    font-size: 17px;
-}
+#index>ul>li>a:nth-child(2):not(.b){font-size: 17px;}
 #index>ul>li>a:nth-child(2).b{
     font-family: 'NanumSquareExtraBold';
     font-size: 19px;
 }
 #index>ul>li>a>img{opacity: 0;}
-/* #index>ul>li>a>img.active{opacity: 100;} */
 
 /* section1 start*/
 #section1, #section9{background-color: #757066;}
@@ -176,8 +153,6 @@ h2{
     font-family: 'Harry P Regular', sans-serif;
     font-size: 100px;
     letter-spacing: 30px;
-    /* text-align: left; */
-    /* margin-top: 10px; */
 }
 .about> h2{
     text-align: center;
@@ -196,12 +171,8 @@ h2{
     font-family: 'NanumSquareExtraBold';
     width: 200px;
 }
-#section2>.con>.about>ul>li>ul>li{
-    padding-bottom: 20px;
-}
-#section2>.con>.about>ul>li>ul>li>span{
-    margin-right: 20px;
-}
+#section2>.con>.about>ul>li>ul>li{padding-bottom: 20px;}
+#section2>.con>.about>ul>li>ul>li>span{margin-right: 20px;}
 .b{font-family: 'NanumSquareExtraBold';}
 #section2>.con>.about>ul>li:nth-child(3)>ul>li{ word-spacing: 20px;}
 /* section3 About end */
@@ -212,8 +183,6 @@ h2{
 .contents{position: absolute;top: 0;right: 75px;}
 
 #section2>.contents>h2{padding-left: 0;}
-/* .contents{display: none;} */
-
 /* section2 contents end */
 
 #section3, #section4, #section5, #section6{
@@ -449,9 +418,7 @@ h2{
     display: flex;
     margin: 0 auto;
 }
-#section6 h2{
-    letter-spacing: 20px;
-}
+#section6 h2{letter-spacing: 20px;}
 .NeonSign {text-align: left; margin-top: 13%;}
 .f11{
     background-image: url(../images/neonsign.gif);
@@ -582,7 +549,6 @@ h2{
     margin-left: 100px;
     margin-right: 100px;
 }
-
 /* section8 end */
 
 /* section9 contact start */

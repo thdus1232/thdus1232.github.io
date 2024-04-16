@@ -5,9 +5,7 @@
     font-weight: normal;
     src: local('Harry P Regular'), url('HARRYP__.woff') format('woff');
 }
-a { 
-    text-decoration: none;
-}
+a {text-decoration: none;}
 body {
     color: #965c00;
     font-family: 'NanumSquare', sans-serif;
@@ -28,9 +26,7 @@ body {
     background-image: url(../images/cast.png),url(../images/bgb.png);
     background-repeat: no-repeat;
     background-position: right bottom;
-    
     /* animation: move 2.5s linear; */
-
 }
 #section1>a>img{
     width: 542px;height: 512px;
