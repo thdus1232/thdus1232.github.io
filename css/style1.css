@@ -47,12 +47,12 @@ body {
         animation-direction: alternate; */
 
 @keyframes intro {
-    from{scale: 10;}
-    to{scale: 1;}    
+    from{transform : scale(10);}
+    to{transform : scale(1);}    
 }
 @keyframes move {
-    from{left: 0;;}
-    to{left: 10px;;}    
+    from{left: 0;}
+    to{left: 10px;}    
 }
 
 #section1> .wpp{
