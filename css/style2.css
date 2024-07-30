@@ -5,7 +5,6 @@
     font-weight: normal;
     src: local('Harry P Regular'), url('HARRYP__.woff') format('woff');
 }
-
 a { 
     color: #965c00;
     text-decoration: none;
@@ -25,6 +24,7 @@ body {
     display: flex;
     /* align-items: center; */
     justify-content: center;
+    overflow: hidden;
 }
 
 #horizontal {
@@ -44,14 +44,13 @@ body {
     z-index: 1000;
 }
 #index>ul{
-    width: 100%; 
     display: flex;
     text-align: center;
 }
-
 #index>ul>li>a{
+    display: block;
+    padding: 5px;
     padding-bottom: 10px;
-    display: inline-block;
 }
 #index>ul>li>a:nth-child(2){
     border-top: 3px solid;
@@ -64,7 +63,7 @@ body {
     font-family: 'NanumSquareExtraBold';
     font-size: 19px;
 }
-#index>ul>li>a>img{opacity: 0;}
+#index>ul>li>a>img{opacity: 0; width: 100%;}
 
 /* section1 start*/
 #section1, #section9{background-color: #757066;}
@@ -85,7 +84,6 @@ body {
     margin: 219px auto;
     margin-bottom: 36px;
 }
-
 .nameen{
     font-family: 'Harry P Regular', sans-serif;
     font-size: 72px;
@@ -111,16 +109,13 @@ body {
     position: relative;
     text-align: center;
 }
-
 /* content 속성으로 추가한 이미지는 크기를 정할 수 없다. 크기를 조절하고 싶다면 background 속성을 이용한다. */
 #section2>.con>.info::before{
     content: url(../images/light.png);
     display: inline-block;
-    /* width: 33px; height: 70px; */
     padding-top: 144px;
     margin-left: -600px;
 }
-
 #section2>.con>.info>.nameen::before{
     content: url(../images/glasses.png);
     display: inline-block;
@@ -138,7 +133,6 @@ body {
     justify-content: center;
     z-index: 1;
 }
-
 #section2>.con>.info> .nameen{
     font-size: 47px;
     letter-spacing: 10px;
@@ -175,7 +169,7 @@ h2{
 #section2>.con>.about>ul>li>ul>li>span{margin-right: 20px;}
 .b{font-family: 'NanumSquareExtraBold';}
 #section2>.con>.about>ul>li:nth-child(3)>ul>li{ word-spacing: 20px;}
-/* section3 About end */
+/* section2 About end */
 
 /* section2 contents start */
 .con{position: relative;}
@@ -191,7 +185,6 @@ h2{
     background-size: cover;
     background-position: -90px;
 }
-
 /* section3 콘텐츠 pixcelart start */
 #section3> .con{ 
     /* width: 83.5%; */
@@ -219,7 +212,6 @@ h2{
     margin-top: 24px;margin-left: 24px;
     margin-bottom: 12px;
 }
-
 #section3 .pp, #section4 .pp{
     font-family: 'NanumSquareExtraBold', sans-serif;
     font-size: 22px;
@@ -261,14 +253,8 @@ h2{
     margin-top: 10%;
     margin-left: 10%;
 }
-.f3>.polygon{
-    margin-top: 114px;margin-left: 112px;
-}
-#section3>.con>div>.poly{
-    font-size: 6.5vw;
-    /* font-size: 130px;
-    text-align: right; */
-}
+.f3>.polygon{ margin-top: 114px;margin-left: 112px; }
+#section3>.con>div>.poly{ font-size: 6.5vw; }
 /* 폴리곤 벅스배너 끝 */
 
 /* 배경액자 f4,f5,f6 */
@@ -347,7 +333,6 @@ h2{
     color: #965c00;
     margin-bottom: 10px;
 }
-
 .box{
     border: 1px solid #432900;
     text-align: center;
@@ -371,7 +356,6 @@ h2{
     padding-left: 48px;
     padding-top: 61px;
 }
-
 /* 명함시작 */
 #section5>.con>.right{
     margin-left: 240px;
@@ -392,7 +376,7 @@ h2{
 }
 #section5>.con>.right>ul>li:nth-child(2){
     font-size: 22px;
-    padding-left: 36px;padding-right: 50px;
+    padding-left: 36px; padding-right: 50px;
 }
 #section5>.con>.right>ul>li:nth-child(3){
     width: 160px;
@@ -523,10 +507,9 @@ h2{
     font-family: 'NanumSquareExtraBold', sans-serif;
     width: 150px;
 }
-
 #section7> .con> .left,
-#section8> .con> .left{
-    width: 800px;height: 760px;
+#section8> .con> .left{ 
+    width: 800px; height: 760px;
 }
 #section7> .con> .right,
 #section8> .con> .right{
@@ -564,9 +547,7 @@ h2{
     font-family: 'NanumSquareBold', sans-serif;
     padding: 20px;
 }
-#section9 .am div:nth-child(4){
-    font-size: 60px;
-}
+#section9 .am div:nth-child(4){ font-size: 60px;}
 #section9 .am{
     margin-top: 3%;
     background-image: url(../images/ylight.png),url(../images/am.png);
